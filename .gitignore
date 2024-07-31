@@ -1,0 +1,24 @@
+Shared/Test photos
+__pycache__/
+.ipynb_checkpoints/
+.gpt-runner/
+node_modules/
+my_venv
+Shared\photos
+Linux src\src\LLM_api_calls*
+Linux src\src\web interface*
+metadata.pkl
+new_filename.pkl
+passfail_list.pkl
+prompts.txt
+dji_data_extraction.log
+appendedmetadata.xlsx
+iOS app
+Linux src\src\__init__.py
+Linux src\src\utils.py
+Linux src\src\main.py
+metadata.pkl
+.env
+Shared/*
+!Shared/Data
+uploads

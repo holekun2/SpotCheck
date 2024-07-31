@@ -1,0 +1,82 @@
+{
+    "flight_sorting": {
+      "angle_tolerance": 3,
+      "categories": {
+        "downlook": {
+          "angle": -35,
+          "min_photos": 60
+        },
+        "uplook": {
+          "angle": 20,
+          "min_photos": 60,
+          "max_altitude": "max"
+        },
+        "center": {
+          "angle": 0,
+          "min_photos": 60,
+          "max_altitude": "max"
+        },
+        "cable_run": {
+          "angle": -22,
+          "min_photos": 20,
+          "min_altitude": 20
+        },
+        "tower_flight_type_1": {
+          "angle": -40,
+          "min_photos": 200
+        },
+        "tower_flight_type_2": {
+          "angle": -50,
+          "min_photos": 200
+        },
+        "top_down": {
+          "angle": -90,
+          "min_photos": 0
+        },
+        "compound_flight_upper": {
+          "angle": -45,
+          "min_photos": 0
+        },
+        "compound_flight_lower": {
+          "angle_range": [-30, -15],
+          "min_photos": 0
+        }
+      },
+      "min_interruption_photos": 5,
+      "orbit_detection": {
+        "min_rotation": 70,
+        "max_rotation": 350
+      }
+    },
+    "analyzers": {
+      "orbit": {
+        "criteria": ["downlook", "center in", "center out", "uplook", "Orbit \\d+"],
+        "horizontal_overlap_threshold": 70,
+        "radial_distance_range": [3, 9]
+      },
+      "ascent_descent": {
+        "criteria": ["cable run", "ascent", "descent"],
+        "vertical_overlap_threshold": 60
+      },
+      "tower_flight_type_1": {
+        "coverage_threshold": 70
+      },
+      "tower_flight_type_2": {
+        "orbit_count": 2,
+        "ascent_count": 4,
+        "descent_count": 5
+      },
+      "compound_check": {
+        "upper_coverage_threshold": 350,
+        "lower_coverage_threshold": 350,
+        "upper_overlap_threshold": 60,
+        "lower_overlap_threshold": 50
+      },
+      "top_down": {
+        "north_facing_tolerance": 10
+      },
+      "cable_anchor": {
+        "assets_folder": "Shared/assets/image analyzer assets"
+      }
+    }
+  }

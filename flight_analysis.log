@@ -1,0 +1,3 @@
+2024-07-29 12:47:00,107 - WARNING -  * Debugger is active!
+2024-07-29 12:47:00,115 - INFO -  * Debugger PIN: 938-855-315
+2024-07-29 12:55:06,085 - INFO -  * Detected change in 'c:\\SpotCheck\\SpotCheck\\Linux src\\src\\Flight analysis\\tower_flight_type_1_analyzer.py', reloading

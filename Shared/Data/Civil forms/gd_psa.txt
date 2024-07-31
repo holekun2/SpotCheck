@@ -1,0 +1,136 @@
+Is Existing AT&T Equipment Installed on Site in Shelter, Tenant Improvement, OEM Outdoor Cabinets, or Hybrid Outdoor Cabinets?_IDA
+Does the site contain existing equipment that is elevated due to flood plain or other reasons?_IDA
+Did Auditor Notify AT&T NRC (Network Reliability Center) Upon Arrival? (800) 638-2822_Pilot
+Did Auditor Notify AT&T NRC (Network Reliability Center) Upon Departure? (800) 638-2822_Pilot
+Did Auditor Sign In and Out of The Logbook? (Provide Photo)_Pilot
+Log Book Photo (Arrival)_Pilot
+Log Book Photo (Departure)_Pilot
+Does Gate Access Require Combo or Key?_IDA
+Does the Shelter Require a Key, Tracess Key, or Combo?_Pilot
+Are Any Other Combos or Keys Required for Cabinets / PPC's / Power Panels, etc.?
+Are there any generator currently installed at the location?_IDA
+Generator Installed (Yes/No)_IDA
+Does The Generator Appear To Be Dedicated/Owned By AT&T Or Does It Appear To Be A Shared Generator?_IDA
+Generator Type_IDA
+Generator Connected (Yes/No)_IDA
+Generator Type (NG, LP or Diesel)_IDA
+Does T Mobile have equipment present at this location
+Is T Mobile connected to a generator at this location
+"Site Power Calculation Tool Complete - SPCT (Yes/No)"
+"Is DAC required at location or a higher capacity generator? NOTE:  Tenant improvement locations are exempt from DAC solution. Tenant improvements will be moved to larger size generator if needed"
+If known, does this jurisdiction require low emission generator solution?
+"Is this a coastal location (Telecommunications equipment installations within 2 miles of a mainland coastline, or within 5 miles of island coastlines, should be considered to reside in coastal environments where exposure to marine (salt fog) is expected to occur within 2 miles of salt coast)?"_Pilot
+Are there any potential issues using natural gas? (Plumbing, etc.)
+Are there any potential issues using diesel? (Exhaust, etc.)
+Are  there  any  potential  issues  using propane? (Space for tank, etc.)
+Is there space in the compound for a 500 gallon propane tank?  (Taking into account it would require a 10'-15' spark zone/radius)
+Is a Natural Gas Demarc located within 50' of proposed Generator Location?
+Is shelter large enough for equipment and generator room?
+Can shelter be modified to contain two separate rooms with two separate access doors that can be accessed for placement of the equipment and maintenance?
+Can equipment be decommissioned or relocated to make room for generator room?  This includes HVAC, DC Plant and other technology
+"Is this a prime power location (no commercial power provided to location)"
+"Is there a manual disconnect at the location?"
+Is There More Than One Meter Feeding AT&T Equipment
+Are There Multiple Panelboards?
+Integrated Mechanical Interlock Installed?
+Does the Site Have an Existing Manual Transfer Switch Installed?
+Does the Site Have an Existing Generator Plug Installed for a Mobile Generator?
+Does the Site Have an Existing Automatic Transfer Switch (ATS) Installed?
+Is There Space to Install a New ATS on Site?
+Is There Room for an Emergency Stop Button
+Is There Room for a Single Pole 20A Circuit Breaker for the Generator Battery Charger within Panelboard?
+"If not, is space available for a subpanel?"
+"Room for Proposed Generator within Compound?  (including maintenance space)"
+If not, are there other options?
+Will generator fit within the existing lease space rights within the compound?  Note:  This is current ground space being utilized - allowed ground space per contract.
+Generator Exhaust Minimum of 10' from any bldg opening?
+Are There Any Existing Concrete Slabs That Could Be Used to Place the Proposed Generator On?
+Is Panel 1 PTLC Assembly?
+Is Panel 2 PTLC Assembly?
+Shelter Need Exterior Maintenance (Yes/No)
+"Shelter Need Interior Maintenance (Yes/No)"
+Site Compound Have Enough Room for Equipment ex. - Lull Forklift, Other Rental Equipment (Yes/No)
+Are There Multiple Panelboards (Yes/No)
+CAMLOC Installed (Yes/No)
+Power Plant Need Relocation (Yes/No)
+"If “Yes” Install Metal Plates - Floor Issues (Yes/No)"
+Batteries Need Relocation (Yes/No)
+Can a DAC/WAC be placed if needed?
+Can HVAC be relocated?
+"Site Have a Manual Transfer Switch (Yes/No)"
+Site Have an Automatic Transfer Switch (Yes/No)
+"Can the AC Panels be relocated if needed?"
+Locate Shelter Data Plate – Needs Relocation (Yes/No)
+Are There Radio Heads Inside the Shelter (Yes/No)
+Remove Smoke Detectors (Yes/No)
+Remove Hydrogen Detectors (Yes/No)
+"Fire Suppression System Installed (Yes/No)"
+If “Yes” Is The System Active (Yes/No)
+"If “Yes” Can it Be Turned Down & Removed (Yes/No)"
+Does the Master Ground Bar Need to Be Replaced or New One Installed (Yes/No)
+"Due to Size Too Small/Not Meet Standards (Yes/No)"
+Not Enough Open Positions (Yes/No)
+New Frame Grounds Home Run to Master Ground Bar (Yes/No)
+"Remove or Relocate Cable Tray (Yes/No)"
+Remove All Old Unused Wire, Cables, & Grounding (Yes/No)
+"Changeout All Interior & Exterior (Equipment& Generator Door) to LED Lights (Yes/No)"
+Will Need to Cover/Seal all Unused Penetrations on The Shelter (Yes/No)
+Need Shelter Layout Before Changes
+Need Shelter Layout After Changes
+Landlord Placard
+General Compound Photo
+Shelter Door or Overall Outdoor Equipment
+AT&T Meter Photo
+H-Frame Disconnect
+Shelter Exterior Disconnect Photo
+Generator Receptacle
+MTS (indoor or outdoor)
+ATS (indoor or outdoor)
+Overall Tower Photo
+Photo at Tower Base Looking North
+Photo at Tower Base Looking South
+Photo at Tower Base Looking East
+Photo at Tower Base Looking West
+Photo Looking at Compound From North
+Photo Looking at Compound from South
+Photo Looking at Compound from East
+Photo Looking at Compound from West
+Photo of Access Easement
+Photo of Utility Easement
+Existing Generator 1
+Existing Generator 2
+Photo of Existing Gas Meter (if applicable)
+Photo of Signed Log Book (Date and Time, In and Out)
+Compound Sketch (Draw & take a photo)
+Conduit Route - Photo 1
+Conduit Route - Photo 2
+Conduit Route - Photo 3
+ATS Location Area Photo
+Generator Lease Area - Photo 1
+Generator Lease Area - Photo 2
+Generator Lease Area - Photo 3
+Generator Lease Area - Photo 4
+Proposed Propane Tank Location Photo 1
+Proposed Propane Tank Location Photo 2
+Proposed Propane Tank Location Photo 3
+Panelboard 1 Exterior (inside shelter)
+Panelboard 1 Door Breaker Schedule
+Panelboard 1 with Open Door
+Panelboard 1 ATS Label
+Panelboard 1 Main Breaker
+Panelboard 1 Secondary Breakers Photo 1
+Panelboard 1 Secondary Breakers Photo 2
+Panelboard 1 Secondary Breakers Photo 3
+Panelboard 2 Exterior (inside shelter)
+Panelboard 2 with Open Door
+Panelboard 2 Door Breaker Schedule
+Panelboard 2 ATS Label
+Panelboard 2 Main Breaker
+Panelboard 2 Secondary Breakers Photo 1
+Panelboard 2 Secondary Breakers Photo 2
+Panelboard 2 Secondary Breakers Photo 3
+Access or Installation Concerns
+Anti Theft / Security Requirements
+Has the CRAN, Microwave, DAS been included in the SPCT calculation if required?
+Is there room for a single pole 20A circuit breaker for the generator battery charger within panelboard?
+If not, is space available for a subpanel?

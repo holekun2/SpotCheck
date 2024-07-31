@@ -1,0 +1,39 @@
+Photo of Gate Signage
+Correct Keypad/Locks Combos - Gate and Site Entrance
+Power Meter
+Power Meter Breaker
+Photo of TMO Placard
+Lock Combos or Key type  - Cabinets
+Is there an area work light on site? Show the light turned on. (If the light is not on in the photo, it means the switch is not working or the light is not working)
+Provide a photo of the GFCI
+AC Circuit Breaker Panel - Overall (PPC)
+AC Circuit Breaker Panel - Main Breaker Size (PPC)
+AC Circuit Breaker Panel - Legend (PPC)
+Logbook Entry
+Power/SSC Cabinet OEM (Overall Photo with power cabinet open from front)
+Power/SSC Cabinet OEM (Photo of all breakers w/ size visible)
+Power/SSC Cabinet OEM (Photo of model and serial number for plant)
+Power/SSC Cabinet OEM (Photo of the Digital Display on plant)
+All Interior Ground Bars - NOTE: If multiple photos are needed, add the additional photos to the gallery
+Router (Make / Model)
+All Alarm Blocks (Overall of each Alarm Block)
+RAN Equipment OEM
+Batteries (Overall of all batteries on site) - NOTE: If multiple photos are needed, add the additional photos to the gallery
+TMO System Module Asset Tags (Magenta/Pink) - NOTE: If multiple photos are needed, add the additional photos to the gallery
+AAV Mounting - Overall photo of the AAV cabinet open from the front. - NOTE: Do not open the box housing the fiber connections
+Are ground mounted multiplexers on site?  If yes, please take an overall photo of the multiplexers. - NOTE: If multiple photos are needed, add the additional photos to the gallery.
+Additional Cabinets - Overall w/ door open 
+Additional Cabinets - Overall w/ back open 
+Capture Exterior GPS Antenna - Overall
+Bottom Safety Cable Anchor
+All Exterior Ground Bars - NOTE: If multiple photos are needed, add the additional photos to the gallery
+Capture Flexi Stacks Overall - NOTE: If multiple photos are needed, add the additional photos to the gallery
+COVP Box (Front photo and any broken clips securing cover)
+COVP Box - Inside Overall
+COVP Box - Cable Labels. NOTE: If multiple photos are needed, add the additional photos to the gallery 
+Additional COVP Box (Front photo and any broken clips securing cover).
+Additional COVP Box - Inside Overall
+Additional COVP Box - Cable Labels. NOTE: If multiple photos are needed, add the additional photos to the gallery
+TMO Labeled Fuel Tank (if present) and Fuel Gauge (Front)
+TMO Labeled Generator (if present) and Open Door (if unlocked) (Front)
+Compound / Shelter / Cabinet(s) Secured
