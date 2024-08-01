@@ -3,8 +3,13 @@ from sqlalchemy.orm import sessionmaker, scoped_session
 from contextlib import contextmanager
 from flight_models import Base
 from flight_models import Flight, Photo, AuditEntry, FlightAnalysis, SiteInspection, Inspection
+import os
+from dotenv import load_dotenv
 
-DATABASE_URL = "sqlite:///flight_inspection.db"
+# Load environment variables from .env file
+load_dotenv()
+
+DATABASE_PATH = os.getenv('DATABASE_PATH')
 
 class DatabaseManager:
     def __init__(self, database_url):
@@ -81,7 +86,7 @@ class DatabaseManager:
             
         
 if __name__ == "__main__":
-    db_manager = DatabaseManager(DATABASE_URL)
+    db_manager = DatabaseManager(DATABASE_PATH)
     all_records = db_manager.query_all()
 
     for table_name, records in all_records.items():

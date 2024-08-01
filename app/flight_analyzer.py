@@ -5,16 +5,20 @@ from tower_flight_type_1_analyzer import TowerFlightType1Analyzer
 from tower_flight_type_2_analyzer import TowerFlightType2Analyzer
 from compound_flight_analyzer import CompoundCheckAnalyzer
 from top_down_analyzer import TopDownAnalyzer
-from database import DatabaseManager, DATABASE_URL
+from database import DatabaseManager
 from dji_data_extraction import SiteLocation
 import pandas as pd
-from flight_processor import FlightProcessor
 from flight_models import *
 from datetime import datetime
 import pytz
-from scope_checker import ScopeChecker
 from inspection_checker import InspectionChecker
 from audit_manager import AuditManager
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+DATABASE_URL=os.getenv('DATABASE_PATH')
 
 class FlightAnalyzer:
     def __init__(self, db, flight_data_df, passfail_list):

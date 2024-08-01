@@ -1,8 +1,12 @@
 import os
 from sqlalchemy import create_engine
 from flight_models import Base  # Make sure this import is correct
+from dotenv import load_dotenv
 
-DATABASE_URL = "sqlite:///flight_inspection.db"  # Adjust if your database URL is different
+# Load environment variables from .env file
+load_dotenv()
+
+DATABASE_URL = os.getenv('DATABASE_PATH')
 
 def reset_database():
     # Delete the existing database file
