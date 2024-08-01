@@ -21,4 +21,4 @@ metadata.pkl
 .env
 Shared/*
 !Shared/Data
-uploads
+app\Inspection data
