@@ -1,6 +1,6 @@
 # scope_checker.py
 
-from flight_models import *
+from .flight_models import *
 
 class ScopeChecker:
     @staticmethod

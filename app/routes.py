@@ -1,18 +1,18 @@
 from flask import request, jsonify, render_template
-from metadata_processor import MetadataProcessor
-from flight_analyzer import FlightAnalyzer
-from utils import load_flight_requirements, create_inspection_dict, export_flight_data, print_db_contents
-from flight_models import Inspection, SiteInspection, Flight
+from .metadata_processor import MetadataProcessor
+from .flight_analyzer import FlightAnalyzer
+from .utils import load_flight_requirements, create_inspection_dict, export_flight_data, print_db_contents
+from .flight_models import Inspection, SiteInspection, Flight
 import json
 from sqlalchemy.orm import joinedload
-from flight_sorting import FlightSorter
-from inspection_processor import InspectionProcessor  # Add this import
-from database_loader import *
+from .flight_sorting import FlightSorter
+from .inspection_processor import InspectionProcessor  # Add this import
+from .database_loader import *
 from flask import send_file
 import io
 from PIL import Image
 import os
-from plotter import Plotter
+from .plotter import Plotter
 
 
 def setup_routes(app, db_manager):

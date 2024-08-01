@@ -3,9 +3,9 @@ import pandas as pd
 import re
 import math
 from typing import List, Dict, Any, Tuple
-from data_export import export_to_excel
+
 #from flight_sorting import save_data_to_file
-from utils import Utilities
+from .utils import Utilities
 # TODO: Refactor the following method in the OrbitAnalyzer class to integrate database operations:
 # Update the method signature to include a db_session parameter.
 # Query the FlightAnalysis object using the flight_id from the category dictionary.

@@ -1,4 +1,4 @@
-from database import DatabaseManager
+from .database import DatabaseManager
 from .flight_processor import FlightProcessor
 from .audit_manager import AuditManager
 from .flight_models import Inspection, SiteInspection
@@ -8,9 +8,6 @@ from typing import List, Dict, Any
 from datetime import datetime
 import pytz
 
-# inspection_processor.py
-
-from scope_checker import ScopeChecker
 
 class InspectionProcessor:
     @staticmethod

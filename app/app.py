@@ -1,6 +1,6 @@
 from flask import Flask
 from .database import DatabaseManager
-from routes import setup_routes
+from .routes import setup_routes
 from dotenv import load_dotenv
 import os
 

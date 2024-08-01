@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from utils import Utilities
+from .utils import Utilities
 from typing import List, Tuple, Dict
 import pandas as pd
 

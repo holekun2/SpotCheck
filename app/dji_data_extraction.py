@@ -5,7 +5,6 @@ import re
 from datetime import datetime
 from tqdm import tqdm
 import pickle
-from data_export import export_to_excel
 from multiprocessing import Pool, Value
 import pandas as pd
 from geopy.distance import geodesic

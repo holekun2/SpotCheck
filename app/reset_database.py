@@ -1,6 +1,6 @@
 import os
 from sqlalchemy import create_engine
-from flight_models import Base  # Make sure this import is correct
+from .flight_models import Base  # Make sure this import is correct
 from dotenv import load_dotenv
 
 # Load environment variables from .env file

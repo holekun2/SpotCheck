@@ -1,5 +1,5 @@
-from flight_models import InspectionStatus, FlightStatus, SiteInspection, SiteStatus
-from audit_manager import AuditManager
+from .flight_models import *
+from .audit_manager import AuditManager
 from datetime import datetime
 import pytz
 

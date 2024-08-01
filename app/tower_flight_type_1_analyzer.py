@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 from typing import List, Dict, Any
-from utils import Utilities
+from .utils import Utilities
 from .image_analyzer_gemini import ImageAnalyzerGemini
 from .dji_data_extraction import PHOTO_BASE_PATH
 from .ascent_descent_analyzer import AscentDescentAnalyzer
