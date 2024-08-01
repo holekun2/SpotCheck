@@ -1,10 +1,5 @@
-import os
 import pandas as pd
-import pickle
 from typing import List, Dict, Any, Tuple
-from data_export import export_to_excel
-from utils import Utilities
-
 
 #TODO write conditions for how many ascents or descents are required
 

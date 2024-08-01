@@ -1,18 +1,18 @@
 import re
-from orbit_analysis import OrbitAnalyzer
-from ascent_descent_analyzer import AscentDescentAnalyzer
-from tower_flight_type_1_analyzer import TowerFlightType1Analyzer
-from tower_flight_type_2_analyzer import TowerFlightType2Analyzer
-from compound_flight_analyzer import CompoundCheckAnalyzer
-from top_down_analyzer import TopDownAnalyzer
-from database import DatabaseManager
-from dji_data_extraction import SiteLocation
+from .orbit_analysis import OrbitAnalyzer
+from .ascent_descent_analyzer import AscentDescentAnalyzer
+from .tower_flight_type_1_analyzer import TowerFlightType1Analyzer
+from .tower_flight_type_2_analyzer import TowerFlightType2Analyzer
+from .compound_flight_analyzer import CompoundCheckAnalyzer
+from .top_down_analyzer import TopDownAnalyzer
+from .database import DatabaseManager
+from .dji_data_extraction import SiteLocation
 import pandas as pd
-from flight_models import *
+from .flight_models import *
 from datetime import datetime
 import pytz
-from inspection_checker import InspectionChecker
-from audit_manager import AuditManager
+from .inspection_checker import InspectionChecker
+from .audit_manager import AuditManager
 from dotenv import load_dotenv
 import os
 

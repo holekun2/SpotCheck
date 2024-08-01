@@ -1,7 +1,7 @@
 from typing import Dict, Any
 from datetime import datetime
 import pandas as pd
-from dji_data_extraction import SiteLocation
+from .dji_data_extraction import SiteLocation
 
 class MetadataProcessor:
     @staticmethod

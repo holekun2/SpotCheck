@@ -1,9 +1,7 @@
-import numpy as np
 import pandas as pd
 import pickle
 from typing import List, Dict, Any, Tuple
-from data_export import export_to_excel
-from utils import Utilities
+from .utils import Utilities
 import math
 
 class CompoundCheckAnalyzer:

@@ -1,10 +1,6 @@
-# database_loader.py
-
+from .flight_models import Inspection, SiteInspection, Flight, Photo, AuditEntry
+from .scope_checker import ScopeChecker 
 from sqlalchemy.orm import Session
-from flight_models import Inspection, SiteInspection, Flight, Photo, AuditEntry
-from datetime import datetime
-import pytz
-from scope_checker import ScopeChecker 
 import json
 
 class DatabaseLoader:

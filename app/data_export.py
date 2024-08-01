@@ -2,7 +2,7 @@ import pandas as pd
 from openpyxl import Workbook
 from openpyxl.styles import NamedStyle, Font, Border, Side
 from openpyxl.utils.dataframe import dataframe_to_rows
-import json
+
 
 def export_to_excel(data, excel_filename, new_filename=None):
     if isinstance(data, pd.DataFrame):

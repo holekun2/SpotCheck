@@ -1,8 +1,6 @@
-from flight_models import *
-import json
-from flight_models import SiteInspection
+from .flight_models import *
 from sqlalchemy.orm import joinedload
-from scope_checker import ScopeChecker
+from .scope_checker import ScopeChecker
 
 # This module processes flight data for site inspections, ensuring that each site has a set of required flights.
 # The process involves the following steps:

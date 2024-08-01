@@ -1,6 +1,6 @@
 import os
-from image_analyzer_gemini import ImageAnalyzerGemini
-from prompts import CABLE_ANCHOR_SYSTEM_INSTRUCTION, CABLE_ANCHOR_PROMPT
+from .image_analyzer_gemini import ImageAnalyzerGemini
+from .prompts import CABLE_ANCHOR_SYSTEM_INSTRUCTION, CABLE_ANCHOR_PROMPT
 
 class CableAnchorAnalyzer:
     def __init__(self, flight_data):

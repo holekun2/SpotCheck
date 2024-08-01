@@ -1,5 +1,5 @@
 from flask import Flask
-from database import DatabaseManager
+from .database import DatabaseManager
 from routes import setup_routes
 from dotenv import load_dotenv
 import os
@@ -21,6 +21,5 @@ class App:
     def run(self):
         self.app.run(debug=True)
 
-if __name__ == '__main__':
-    app_instance = App()
-    app_instance.run()
+
+app_instance = App()

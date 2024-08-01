@@ -1,8 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 from contextlib import contextmanager
-from flight_models import Base
-from flight_models import Flight, Photo, AuditEntry, FlightAnalysis, SiteInspection, Inspection
+from .flight_models import *
 import os
 from dotenv import load_dotenv
 

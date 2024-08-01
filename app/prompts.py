@@ -39,19 +39,3 @@ FAIL - if the image clearly does not show the cable anchor or is significantly d
 INDETERMINATE - if you cannot confidently determine whether the image matches
 """
 
-#error
-
-# Unmatched right curly bracket at /loader/HASH(0x26b8f04)/PAR/Dist.pm line 62, at end of line
-# syntax error at /loader/HASH(0x26b8f04)/PAR/Dist.pm line 62, near "}"
-# syntax error at /loader/HASH(0x26b8f04)/PAR/Dist.pm line 76, near "}"
-# syntax error at /loader/HASH(0x26b8f04)/PAR/Dist.pm line 593, near "}"
-# Can't use global $! in "my" at /loader/HASH(0x26b8f04)/PAR/Dist.pm line 607, near "$! "
-# syntax error at /loader/HASH(0x26b8f04)/PAR/Dist.pm line 609, near "}"
-# Can't redeclare "my" in "my" at /loader/HASH(0x26b8f04)/PAR/Dist.pm line 636, near ""
-# syntax error at /loader/HASH(0x26b8f04)/PAR/Dist.pm line 644, near "croak "First argument to merge_par() must be the .par archive to modify.""
-# syntax error at /loader/HASH(0x26b8f04)/PAR/Dist.pm line 648, near "croak "'$base_par' is not a file or you do not have enough permissions to read and modify it.""
-# /loader/HASH(0x26b8f04)/PAR/Dist.pm has too many errors.
-# Compilation failed in require at -e line 165.
-# Condition not met for Shared\photos4\DJI_0001.JPG. Missing keys in metadata: ['File Name', 'Create Date', 'Exposure Time', 'F Number', 'Exposure Program', 'ISO', 'Sensitivity Type', 'Components Configuration', 'Shutter Speed Value', 'Aperture Value', 'Exposure Compensation', 'Max Aperture Value', 'Light Source', 'Focal Length', 'Custom Rendered', 'Exposure Mode', 'White Balance', 'Digital Zoom Ratio', 'Focal Length In 35mm Format', 'Scene Capture Type', 'Gain Control', 'Contrast', 'Saturation', 'Sharpness', 'GPS Version ID', 'Relative Altitude', 'Gimbal Pitch Degree', 'Gimbal Yaw Degree', 'Flight Yaw 
-# Degree', 'Flight X Speed', 'Flight Y Speed', 'GPS Latitude', 'GPS Longitude', 'Preview Image', 'Circle Of Confusion', 'Field Of View', 'GPS Position', 'Hyperfocal Distance', 'Light Value', 'Exif Image Width', 'Exif Image Height']
-# Processing files:   0%|▏                                            | 2/491 [00:08<29:43,  3.65s/it]Condition not met for Shared\photos4\DJI_0002.JPG. Missing keys in metadata: ['File Name', 'Create Date', 'Exposure Time', 'F Number', 'Exposure Program', 'ISO', 'Sensitivity Type', 'Components Configuration', 'Shutter Speed Value', 'Aperture Value', 'Exposure Compensation', 'Max Aperture Value', 'Light Source', 'Focal Length', 'Custom Rendered', 'Exposure Mode', 'White Balance', 'Digital Zoom Ratio', 'Focal Length In 35mm Format', 'Scene Capture Type', 'Gain Control', 'Contrast', 'Saturation', 'Sharpness', 'GPS Version ID', 'Relative Altitude', 'Gimbal Pitch Degree', 'Gimbal Yaw Degree', 'Flight Yaw Degree', 'Flight X Speed', 'Flight Y Speed', 'GPS Latitude', 'GPS Longitude', 'Preview Image', 'Circle Of Confusion', 'Field Of View', 'GPS Position', 'Hyperfocal Distance', 'Light Value', 'Exif Image Width', 'Exif Image Height']

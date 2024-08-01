@@ -2,9 +2,9 @@ import numpy as np
 import pandas as pd
 import pickle
 from typing import List, Tuple, Dict, Any
-from data_export import export_to_excel
+from .data_export import export_to_excel
 from sqlalchemy.orm import joinedload
-from flight_models import SiteInspection
+from .flight_models import SiteInspection
 import json
 
 class Utilities:
