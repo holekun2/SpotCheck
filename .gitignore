@@ -1,0 +1,7 @@
+
+__pycache__/
+.env
+app\Inspection data
+app\db
+app\data
+app\static\images
