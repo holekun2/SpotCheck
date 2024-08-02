@@ -15,6 +15,8 @@ from .inspection_checker import InspectionChecker
 from .audit_manager import AuditManager
 from dotenv import load_dotenv
 import os
+from .inspection_data_reader import InspectionDataReader
+
 
 load_dotenv()
 
@@ -79,8 +81,10 @@ class FlightAnalyzer:
 
     def populate_flight_analysis_result(self, processed_metadata, passfail_list, flight_requirements):
         with DatabaseManager(DATABASE_URL).get_db() as db:
+
             site_location = SiteLocation()
-            site_location.inspection_data = pd.read_excel(r'app\Inspection data\inspection_data.xlsx').to_dict('records')
+            site_location.inspection_data = InspectionDataReader.read_inspection_data()
+
 
             site_id = next((item.get('Site ID', 'Unknown') for item in processed_metadata), 'Unknown')
             scope_requirement = next((item.get('Scope Package', 'Unknown') for item in site_location.inspection_data if item.get('Site ID') == site_id), 'Unknown')

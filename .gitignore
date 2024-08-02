@@ -1,10 +1,11 @@
 
 __pycache__/
 .env
-app/Inspection\ data/
+#app/Inspection\ data/
 app/db/
 app/data/
 app/static/images/
 .vs
 app.yaml
 google45edb6be771a34da.html
+spotcheck-431307-c087d08e27f9.json

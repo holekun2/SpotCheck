@@ -13,6 +13,8 @@
 .git
 .gitignore
 
+!app/Inspection data/**
+
 # Python pycache:
 __pycache__/
 # Ignored by the build system

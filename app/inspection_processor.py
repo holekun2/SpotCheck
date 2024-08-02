@@ -7,7 +7,7 @@ import pandas as pd
 from typing import List, Dict, Any
 from datetime import datetime
 import pytz
-
+from .inspection_data_reader import InspectionDataReader
 
 class InspectionProcessor:
     @staticmethod
@@ -16,7 +16,8 @@ class InspectionProcessor:
         
         current_timestamp = datetime.now(pytz.timezone('US/Central'))
         site_location = SiteLocation()
-        site_location.inspection_data = pd.read_excel(r'app\Inspection data\inspection_data.xlsx').to_dict('records')
+        site_location.inspection_data = InspectionDataReader.read_inspection_data()
+
         site_id = next((item.get('Site ID', 'Unknown') for item in processed_metadata), 'Unknown')
         inspection_id = str(next((item.get('Inspection', 'Unknown') for item in site_location.inspection_data if item.get('Site ID') == site_id), 'Unknown'))
         inspection = InspectionProcessor.get_or_create_inspection(db, inspection_id)

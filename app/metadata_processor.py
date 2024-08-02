@@ -2,6 +2,8 @@ from typing import Dict, Any
 from datetime import datetime
 import pandas as pd
 from .dji_data_extraction import SiteLocation
+from .inspection_data_reader import InspectionDataReader
+
 
 class MetadataProcessor:
     @staticmethod
@@ -68,7 +70,7 @@ class MetadataProcessor:
     def process_and_enrich_metadata(metadata_list, existing_metadata):
         processor = MetadataProcessor()
         site_location = SiteLocation()
-        site_location.inspection_data = pd.read_excel(r'app\Inspection data\inspection_data.xlsx').to_dict('records')
+        site_location.inspection_data = InspectionDataReader.read_inspection_data()
 
         processed_metadata = []
         for metadata in metadata_list:

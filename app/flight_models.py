@@ -1,6 +1,3 @@
-#flight_models.py
-
-
 from sqlalchemy import Column, Integer, String, Float, Boolean, DateTime, ForeignKey, JSON, Enum
 from sqlalchemy.orm import relationship, declarative_base
 from datetime import datetime
