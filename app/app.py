@@ -6,20 +6,20 @@ import os
 
 load_dotenv()
 
-app = Flask(__name__)
-
-
-
 class App:
     def __init__(self):
         self.app = Flask(__name__)
         
-        database_path = os.getenv('DATABASE_PATH')
-        self.db_manager = DatabaseManager(database_path)
+        bucket_name = os.getenv('BUCKET_NAME', 'flight-database')
+        db_filename = os.getenv('DB_FILENAME', 'flight_inspection.db')
+        
+        self.db_manager = DatabaseManager(bucket_name, db_filename)
+        self.db_manager.initialize_db()  # Initialize the database
+        
         setup_routes(self.app, self.db_manager)
 
     def run(self):
         self.app.run(debug=True)
 
-
 app_instance = App()
+app = app_instance.app

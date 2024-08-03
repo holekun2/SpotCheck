@@ -70,7 +70,11 @@ class MetadataProcessor:
     def process_and_enrich_metadata(metadata_list, existing_metadata):
         processor = MetadataProcessor()
         site_location = SiteLocation()
-        site_location.inspection_data = InspectionDataReader.read_inspection_data()
+        try:
+            site_location.inspection_data = InspectionDataReader.read_inspection_data()
+        except Exception as e:
+            print(f"Error reading inspection data: {str(e)}")
+            site_location.inspection_data = []
 
         processed_metadata = []
         for metadata in metadata_list:

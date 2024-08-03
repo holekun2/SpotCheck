@@ -83,7 +83,11 @@ class FlightAnalyzer:
         with DatabaseManager(DATABASE_URL).get_db() as db:
 
             site_location = SiteLocation()
-            site_location.inspection_data = InspectionDataReader.read_inspection_data()
+            try:
+                site_location.inspection_data = InspectionDataReader.read_inspection_data()
+            except Exception as e:
+                print(f"Error reading inspection data: {str(e)}")
+                site_location.inspection_data = []
 
 
             site_id = next((item.get('Site ID', 'Unknown') for item in processed_metadata), 'Unknown')

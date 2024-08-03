@@ -13,7 +13,7 @@
 .git
 .gitignore
 
-!app/Inspection data/**
+
 
 # Python pycache:
 __pycache__/

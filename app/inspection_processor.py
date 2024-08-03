@@ -16,7 +16,11 @@ class InspectionProcessor:
         
         current_timestamp = datetime.now(pytz.timezone('US/Central'))
         site_location = SiteLocation()
-        site_location.inspection_data = InspectionDataReader.read_inspection_data()
+        try:
+            site_location.inspection_data = InspectionDataReader.read_inspection_data()
+        except Exception as e:
+            print(f"Error reading inspection data: {str(e)}")
+            site_location.inspection_data = []
 
         site_id = next((item.get('Site ID', 'Unknown') for item in processed_metadata), 'Unknown')
         inspection_id = str(next((item.get('Inspection', 'Unknown') for item in site_location.inspection_data if item.get('Site ID') == site_id), 'Unknown'))
