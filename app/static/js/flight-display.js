@@ -248,40 +248,49 @@ function displayFlightGrid(flightAnalysisResult) {
 
 
 
-import JSZip from 'jszip';
-
 async function moveToFolders(siteFlightSummary, fileMap) {
-    const zip = new JSZip();
-
+    console.log("Starting moveToFolders function");
     try {
+        console.log("Attempting to show directory picker");
+        const directoryHandle = await window.showDirectoryPicker();
+        console.log("Directory picker shown");
+
         for (const site of Object.values(siteFlightSummary.sites)) {
+            console.log(`Processing site ${site.site_id}`);
             for (const flight of site.flights) {
-                const flightFolder = zip.folder(flight.flight_name);
+                console.log(`Processing flight ${flight.flight_name}`);
+                let flightFolderHandle;
+
+                try {
+                    console.log(`Attempting to get existing folder ${flight.flight_name}`);
+                    // Try to get the existing folder
+                    flightFolderHandle = await directoryHandle.getDirectoryHandle(flight.flight_name);
+                    console.log(`Found existing folder ${flight.flight_name}`);
+                    console.log('Found existing folder:', flight.flight_name);
+                } catch (error) {
+                    console.log(`Existing folder ${flight.flight_name} not found, attempting to create it`);
+                    // If the folder doesn't exist, create it
+                    flightFolderHandle = await directoryHandle.getDirectoryHandle(flight.flight_name, { create: true });
+                    console.log(`Created new folder ${flight.flight_name}`);
+                    console.log('Created new folder:', flight.flight_name);
+                }
 
                 for (const uniqueIdentifier of flight['unique identifiers in flight']) {
+                    console.log(`Processing unique identifier ${uniqueIdentifier}`);
                     const file = fileMap.get(uniqueIdentifier);
                     if (file) {
-                        const newFileName = uniqueIdentifier + '.' + file.name.split('.').pop();
-                        const arrayBuffer = await file.arrayBuffer();
-                        flightFolder.file(newFileName, arrayBuffer);
+                        console.log(`Found file for unique identifier ${uniqueIdentifier}`);
+                        await moveFile(flightFolderHandle, file, uniqueIdentifier);
                     }
                 }
             }
         }
 
-        const content = await zip.generateAsync({type: "blob"});
-        const url = URL.createObjectURL(content);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = "organized_flights.zip";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-
-        alert("Zip file with organized folders has been created and download started!");
+        console.log("Files have been successfully moved to their respective folders!");
+        alert("Files have been successfully moved to their respective folders!");
     } catch (error) {
-        console.error('Error creating zip file:', error);
-        alert("An error occurred while creating the zip file. Please check the console for details.");
+        console.error('Error moving files:', error);
+        alert("An error occurred while moving files. Please check the console for details.");
     }
 }
 
