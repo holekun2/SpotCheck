@@ -126,9 +126,9 @@ class Utilities:
 
 
 
-def load_flight_requirements():
-    with open(r'app\Inspection data\flight_requirements.json') as f:
-        return json.load(f)
+# def load_flight_requirements():
+#     with open(r'app\Inspection data\flight_requirements.json') as f:
+#         return json.load(f)
 
 def create_inspection_dict(inspection):
     return {

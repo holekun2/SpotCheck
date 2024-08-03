@@ -39,25 +39,24 @@ class InspectionDataReader:
         return inspection_data
     
 
-from google.cloud import storage
-import json
-
-def load_flight_requirements():
-    # Initialize the Google Cloud Storage client
-    storage_client = storage.Client()
 
 
-    bucket_name = "excel-updater"
-    bucket = storage_client.bucket(bucket_name)
+    def load_flight_requirements():
+        # Initialize the Google Cloud Storage client
+        storage_client = storage.Client()
 
-    # Specify the name of your JSON file in the bucket
-    blob_name = "flight_requirements.json"
-    blob = bucket.blob(blob_name)
 
-    # Download the contents of the blob as string
-    json_string = blob.download_as_text()
+        bucket_name = "excel-updater"
+        bucket = storage_client.bucket(bucket_name)
 
-    # Parse the JSON string
-    flight_requirements = json.loads(json_string)
+        # Specify the name of your JSON file in the bucket
+        blob_name = "flight_requirements.json"
+        blob = bucket.blob(blob_name)
 
-    return flight_requirements
+        # Download the contents of the blob as string
+        json_string = blob.download_as_text()
+
+        # Parse the JSON string
+        flight_requirements = json.loads(json_string)
+
+        return flight_requirements
