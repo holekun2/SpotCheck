@@ -13,7 +13,7 @@ import io
 from PIL import Image
 import os
 from .plotter import Plotter
-from inspection_data_reader import InspectionDataReader
+from .inspection_reader import InspectionDataReader
 
 def setup_routes(app, db_manager):
     @app.route('/')
@@ -53,8 +53,13 @@ def setup_routes(app, db_manager):
             print(f"Running flight analysis")
             analyzer.run_analysis()
 
-            reader = InspectionDataReader()
-            flight_requirements = reader.load_flight_requirements()
+            
+            # # --- Print bucket information here ---
+            # reader = InspectionDataReader()
+            # reader.print_bucket_info() 
+            
+            
+            flight_requirements = InspectionDataReader.load_flight_requirements()
 
     
             inspection_id = analyzer.populate_flight_analysis_result(merged_metadata, passfail_list, flight_requirements)

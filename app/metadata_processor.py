@@ -2,7 +2,7 @@ from typing import Dict, Any
 from datetime import datetime
 import pandas as pd
 from .dji_data_extraction import SiteLocation
-from .inspection_data_reader import InspectionDataReader
+from .inspection_reader import InspectionDataReader
 
 
 class MetadataProcessor:

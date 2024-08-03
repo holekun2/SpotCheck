@@ -15,7 +15,7 @@ from .inspection_checker import InspectionChecker
 from .audit_manager import AuditManager
 from dotenv import load_dotenv
 import os
-from .inspection_data_reader import InspectionDataReader
+from .inspection_reader import InspectionDataReader
 
 
 load_dotenv()
@@ -80,7 +80,7 @@ class FlightAnalyzer:
 
 
     def populate_flight_analysis_result(self, processed_metadata, passfail_list, flight_requirements):
-        with DatabaseManager(DATABASE_URL).get_db() as db:
+        with DatabaseManager().get_db() as db:
 
             site_location = SiteLocation()
             try:

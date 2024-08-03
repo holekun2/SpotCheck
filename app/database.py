@@ -33,18 +33,33 @@ class DatabaseManager:
         ))
 
     def download_db(self):
+        print(f"Downloading database '{self.db_filename}' from bucket '{self.bucket_name}' to local path '{self.local_db_path}'")
         blob = self.bucket.blob(self.db_filename)
+        try:
+            blob.download_to_filename(self.local_db_path)
+            print("Database downloaded successfully")
+        except exceptions.NotFound:
+            print(f"Database '{self.db_filename}' not found in bucket '{self.bucket_name}'")
         blob.download_to_filename(self.local_db_path)
 
     def upload_db(self):
+        print(f"Uploading database '{self.db_filename}' from local path '{self.local_db_path}' to bucket '{self.bucket_name}'")
         blob = self.bucket.blob(self.db_filename)
+        try:
+            blob.upload_from_filename(self.local_db_path)
+            print("Database uploaded successfully")
+        except Exception as e:
+            print(f"Error uploading database: {e}")
         blob.upload_from_filename(self.local_db_path)
 
     def create_new_db(self):
+        print("Creating new database...")
         engine = create_engine(f'sqlite:///{self.local_db_path}', echo=False)
+        print("Created engine")
         Base.metadata.create_all(engine)
         print("New database created with all tables.")
         self.upload_db()
+        print("Uploaded database successfully")
 
     @contextmanager
     def get_db(self):

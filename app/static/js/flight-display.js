@@ -248,37 +248,40 @@ function displayFlightGrid(flightAnalysisResult) {
 
 
 
-async function moveToFolders(siteFlightSummary, fileMap) {
-    try {
-        const directoryHandle = await window.showDirectoryPicker();
+import JSZip from 'jszip';
 
+async function moveToFolders(siteFlightSummary, fileMap) {
+    const zip = new JSZip();
+
+    try {
         for (const site of Object.values(siteFlightSummary.sites)) {
             for (const flight of site.flights) {
-                let flightFolderHandle;
-
-                try {
-                    // Try to get the existing folder
-                    flightFolderHandle = await directoryHandle.getDirectoryHandle(flight.flight_name);
-                    console.log('Found existing folder:', flight.flight_name);
-                } catch (error) {
-                    // If the folder doesn't exist, create it
-                    flightFolderHandle = await directoryHandle.getDirectoryHandle(flight.flight_name, { create: true });
-                    console.log('Created new folder:', flight.flight_name);
-                }
+                const flightFolder = zip.folder(flight.flight_name);
 
                 for (const uniqueIdentifier of flight['unique identifiers in flight']) {
                     const file = fileMap.get(uniqueIdentifier);
                     if (file) {
-                        await moveFile(flightFolderHandle, file, uniqueIdentifier);
+                        const newFileName = uniqueIdentifier + '.' + file.name.split('.').pop();
+                        const arrayBuffer = await file.arrayBuffer();
+                        flightFolder.file(newFileName, arrayBuffer);
                     }
                 }
             }
         }
 
-        alert("Files have been successfully moved to their respective folders!");
+        const content = await zip.generateAsync({type: "blob"});
+        const url = URL.createObjectURL(content);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = "organized_flights.zip";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        alert("Zip file with organized folders has been created and download started!");
     } catch (error) {
-        console.error('Error moving files:', error);
-        alert("An error occurred while moving files. Please check the console for details.");
+        console.error('Error creating zip file:', error);
+        alert("An error occurred while creating the zip file. Please check the console for details.");
     }
 }
 

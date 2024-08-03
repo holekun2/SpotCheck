@@ -7,7 +7,7 @@ import pandas as pd
 from typing import List, Dict, Any
 from datetime import datetime
 import pytz
-from .inspection_data_reader import InspectionDataReader
+from .inspection_reader import InspectionDataReader
 
 class InspectionProcessor:
     @staticmethod
